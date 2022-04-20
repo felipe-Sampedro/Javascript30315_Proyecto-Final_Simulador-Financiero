@@ -1,0 +1,182 @@
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "delectus aut autem",
+    "name":"Pedro",
+    "edad":"56",
+    "Trabaja":"SI",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "quis ut nam facilis et officia qui",
+    "name":"Andres",
+    "edad":"26",
+    "Trabaja":"SI",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "title": "fugiat veniam minus",
+    "name":"Bernardo",
+    "edad":"17",
+    "Trabaja":"SI",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 4,
+    "title": "et porro tempora",
+    "name":"Carlos",
+    "edad":"12",
+    "Trabaja":"NO",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 5,
+    "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+    "name":"Diana",
+    "edad":"33",
+    "Trabaja":"SI",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 6,
+    "title": "qui ullam ratione quibusdam voluptatem quia omnis",
+    "name":"Elena",
+    "edad":"22",
+    "Trabaja":"NO",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 7,
+    "title": "illo expedita consequatur quia in",
+    "name":"Felipe",
+    "edad":"33",
+    "Trabaja":"SI",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 8,
+    "title": "quo adipisci enim quam ut ab",
+    "name":"Gabriela",
+    "edad":"16",
+    "Trabaja":"SI",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 9,
+    "title": "molestiae perspiciatis ipsa",
+    "name":"Ilona",
+    "edad":"26",
+    "Trabaja":"NO",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 10,
+    "title": "illo est ratione doloremque quia maiores aut",
+    "name":"Javier",
+    "edad":"14",
+    "Trabaja":"NO",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 11,
+    "title": "vero rerum temporibus dolor",
+    "name":"Luisa",
+    "edad":"19",
+    "Trabaja":"SI",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 12,
+    "title": "ipsa repellendus fugit nisi",
+    "name":"Mario",
+    "edad":"17",
+    "Trabaja":"SI",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 13,
+    "title": "et doloremque nulla",
+    "name":"Ofelia",
+    "edad":"49",
+    "Trabaja":"NO",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 14,
+    "title": "repellendus sunt dolores architecto voluptatum",
+    "name":"Ramon",
+    "edad":"51",
+    "Trabaja":"SI",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 15,
+    "title": "ab voluptatum amet voluptas",
+    "name":"Sara",
+    "edad":"18",
+    "Trabaja":"SI",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 16,
+    "title": "accusamus eos facilis sint et aut voluptatem",
+    "name":"Tatiana",
+    "edad":"21",
+    "Trabaja":"NO",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 17,
+    "title": "quo laboriosam deleniti aut qui",
+    "name":"Ulises",
+    "edad":"37",
+    "Trabaja":"SI",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 18,
+    "title": "dolorum est consequatur ea mollitia in culpa",
+    "name":"Viviana",
+    "edad":"16",
+    "Trabaja":"NO",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 19,
+    "title": "molestiae ipsa aut voluptatibus pariatur dolor nihil",
+    "name":"William",
+    "edad":"66",
+    "Trabaja":"NO",
+    "completed": true
+  },
+  {
+    "userId": 1,
+    "id": 20,
+    "title": "ullam nobis libero sapiente ad optio sint",
+    "name":"Ximena",
+    "edad":"17",
+    "Trabaja":"SI",
+    "completed": true
+  }
+]
