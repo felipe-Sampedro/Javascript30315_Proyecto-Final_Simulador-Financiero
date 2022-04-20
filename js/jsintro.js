@@ -1,4 +1,3 @@
-
     console.log('intro-js')
     
     const validacion1 = localStorage.getItem('Nombre')
@@ -73,7 +72,7 @@ simular.onclick = () =>{
             let btn=document.createElement('button')
             btn.id='nuevobtn'
             btn.className="btn btn-primary btn-lg"
-            btn.innerHTML="<a href='../index.html' class='text-white' style='text-decoration:none'>IR AL SIMULADOR</a>"
+            btn.innerHTML="<a href='../pages/simulador.html' class='text-white' style='text-decoration:none'>IR AL SIMULADOR</a>"
             ready.append(btn)
         }  
         else if (parseInt(edad.value) < 18 && parseInt(edad.value) >= 15 && trabajando ==="NO" && tutor ==="SI" && trayectoria ==="SI" || parseInt(edad.value) < 18 && parseInt(edad.value) >= 14 && trabajando ==="SI" && tutor ==="NO" && trayectoria ==="SI" || parseInt(edad.value) < 18 && parseInt(edad.value) >= 13 && trabajando ==="SI" && tutor ==="SI" && trayectoria ==="NO"){
