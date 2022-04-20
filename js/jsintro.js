@@ -48,7 +48,6 @@ simular.onclick = () =>{
     localStorage.setItem('Historial', trayectoria)
 
 	if (nombre.value==='' || age.value==='* Selecciona tu Edad'){
-//    if (nombre.value!==null && age.value==='Selecciona tu Edad' || nombre.value==='' && age.value==='Selecciona tu Edad'){
 		alertaintro.innerText="¡Todos los datos con '*' son obligatorios para poder continuar!"
         alertaintro.className="bg-danger m-3"
         Swal.fire({
@@ -76,64 +75,31 @@ simular.onclick = () =>{
             btn.innerHTML="<a href='../pages/simulador.html' class='text-white' style='text-decoration:none'>IR AL SIMULADOR</a>"
             ready.append(btn)
 
-            function PosiblesNuevosClientes(cliente){
-                const NCdo=document.getElementById('posibles-clientes')
-    
-                NCdo.innerHTML=null
-                NCdo.innerHTML="<strong>ENCONTRAMOS LOS SIGUIENTES POSIBLES CLIENTES DE TU LISTA DE CONTACTOS, SI LOS REFIERES PODRAS TENER BENEFICIOS PARA AQUELLOS QUE APLIQUEN</strong>"
-                cliente.forEach( c => {
-                    console.log(c)
-                    if(c.edad >= 18){
-                        sumary=`La persona ${c.name} es un posible nuevo cliente ya que cumple la mayoria de edad`
-                    }
-                    else if(c.edad<18 && c.Trabaja=="SI"){
-                        sumary=`Aunque La persona ${c.name} es menor de edad, es un posible nuevo cliente ya que actualmente ${c.Trabaja} trabaja`
-                    }
-                    else{
-                        sumary=`La persona ${c.name} es menor de edad y actualmente ${c.Trabaja} trabaja, por lo que no califica como posible nuevo cliente`
-                    }
-                    
-                    const li =document.createElement('li')
-                    li.innerText = sumary
-                    NCdo.append(li)
-                });
-            }
-
+            /* Aplicando Fetch al proyecto */
+            fetch('./js/datajsonAPI.json')
+            .then(respuesta => respuesta.json() )
+            .then(dat => {
+                PosiblesNuevosClientes(dat)
+            })
 
         }  
         else if (parseInt(edad.value) < 18 && parseInt(edad.value) >= 15 && trabajando ==="NO" && tutor ==="SI" && trayectoria ==="SI" || parseInt(edad.value) < 18 && parseInt(edad.value) >= 14 && trabajando ==="SI" && tutor ==="NO" && trayectoria ==="SI" || parseInt(edad.value) < 18 && parseInt(edad.value) >= 13 && trabajando ==="SI" && tutor ==="SI" && trayectoria ==="NO"){
             alertaintro.innerText=`Aunque no cumples la edad para un credito, como ${trabajando} estas trabajndo, ${tutor} tienes a alguien que te ampare y ${trayectoria} tienes historial crediticio, cumples con el score para acceder` 
             alertaintro.className="bg-success m-3"
             let btn=document.createElement('button')
+            btn.id='nuevobtn'
             btn.className="btn btn-primary btn-lg"
             btn.innerHTML="<a href='../pages/simulador.html' class='text-white' style='text-decoration:none'>IR AL SIMULADOR</a>"
             ready.append(btn)
 
 
-            function PosiblesNuevosClientes(cliente){
-                const NCdo=document.getElementById('posibles-clientes')
-    
-                NCdo.innerHTML=null
-                NCdo.innerHTML="<strong>ENCONTRAMOS LOS SIGUIENTES POSIBLES CLIENTES DE TU LISTA DE CONTACTOS, SI LOS REFIERES PODRAS TENER BENEFICIOS PARA AQUELLOS QUE APLIQUEN</strong>"
-                cliente.forEach( c => {
-                    console.log(c)
-                    if(c.edad >= 18){
-                        sumary=`La persona ${c.name} es un posible nuevo cliente ya que cumple la mayoria de edad`
-                    }
-                    else if(c.edad<18 && c.Trabaja=="SI"){
-                        sumary=`Aunque La persona ${c.name} es menor de edad, es un posible nuevo cliente ya que actualmente ${c.Trabaja} trabaja`
-                    }
-                    else{
-                        sumary=`La persona ${c.name} es menor de edad y actualmente ${c.Trabaja} trabaja, por lo que no califica como posible nuevo cliente`
-                    }
-                    
-                    const li =document.createElement('li')
-                    li.innerText = sumary
-                    NCdo.append(li)
-                });
-            }
+            /* Aplicando Fetch al proyecto */
+            fetch('./js/datajsonAPI.json')
+            .then(respuesta => respuesta.json() )
+            .then(dat => {
+                PosiblesNuevosClientes(dat)
+            })
 
-            
         }
         else if(parseInt(edad.value) < 18 && trabajando ==="NO" && tutor ==="NO" && trayectoria ==="SI" || parseInt(edad.value) < 18 && trabajando ==="NO" && tutor ==="SI" && trayectoria ==="NO" || parseInt(edad.value) < 18 && trabajando ==="SI" && tutor ==="NO" && trayectoria ==="NO")
         {
@@ -145,18 +111,7 @@ simular.onclick = () =>{
             alertaintro.className="bg-danger m-3"
         }
 
-
-
 	}
-
-
- /* Aplicando Fetch al proyecto */
-    fetch('../js/datajsonAPI.json')
-    .then(respuesta => respuesta.json() )
-    .then( dat => {
-        PosiblesNuevosClientes(dat)
-    })
-
 }
 
 const clear = document.getElementById('restaurar')
